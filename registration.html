@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label{
+            display: block;
+            margin-bottom: 5px;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+             border: black 3px solid;align-self: auto;
+            text-align: center;
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            text-align: left;
+            background-color: rgb(252, 12, 232);
+        }
+        input[type="text"]
+        input[type="email"]
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="sumit"]:hover {background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--cointainer box-Name;user name;Email;password;submit----><!--Rrgistration page-->
+    <div class="container">
+        <h1>Registration Page</h1>
+        <form method="post" action="resister.php">
+            <label for="Name">Name:</label>
+            <input type="text"id="name"name="name" required>
+            <label for="user name">User Name:</label>
+            <input type="text"id="user name"name="user name" required>
+            <label for="email">Email:</label>
+            <input type="text"id="Email"name="email" required>
+            <label for="Password">Password:</label>
+            <input type="text"id="password"name="password" required>
+            <label for="city">City:</label>
+            <input type="text"id="city"name="city"required>
+            <label for="Branch">Branch:</label>
+            <input type="text"id="Branch"name="Branch"required><br>
+            <input type="submit" value="Register">
+        </form>
+        <p>Already have a account?</p>
+        <a href="login.php"> Login here</a><br>
+    </div>

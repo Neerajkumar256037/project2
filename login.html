@@ -1,0 +1,132 @@
+ <!--Login page-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+         <style>
+       
+
+  header {
+    background-color: white;
+    color: rgb(10, 202, 236);
+    padding: 20px;
+  }
+
+  nav {
+      background-color: #f00909;
+    padding: 10px;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 2px;
+    padding: 0;
+  }
+  nav a {
+      color: rgba(15, 235, 15, 0.534);
+    text-decoration: none;
+    padding: 2px;
+    display: flex;
+    cursor: pointer;
+  }
+
+  nav a:hover {
+    background-color: rgb(11, 247, 235);
+    color: red;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  section {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin-top: 0;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    flex-basis: calc(33.33% - 20px);
+  }
+
+  h3 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+
+  img {
+    max-width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+             border: black 3px solid;align-self: auto;
+            text-align: center;
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            text-align: left;
+            background-color: cadetblue;
+            
+        }
+
+  button {
+    background-color: #eb0b0b2c;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  </style>
+</head>
+
+<body>
+    <br>
+    <br>
+    <div class="container">
+        <h1>Login Page</h1>
+        <form method="post" 
+              action="login.php">
+            <label for="username">Username:</label><br>
+            <input type="text" 
+                   id="username" 
+                   name="username" required>
+                 <br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+                  <br>
+            <input type="submit" value="Login" formaction="index.html">
+             <a href="index.html" target="_blank"></a>
+        </form>
+        <br><br>
+        <p> Does not have an account?
+            <a href="registration.html">Click Here</a>
+        </p>
+    </div>
+            <br>
+</body>
+</html>
